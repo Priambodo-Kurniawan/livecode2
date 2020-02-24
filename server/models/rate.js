@@ -20,9 +20,18 @@ module.exports = (sequelize, DataTypes) => {
           msg: 'Reviewer is required field'
         }
       }
-    }
+    },
+    movieId: { 
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
   }, {});
   Rate.associate = function(models) {
+    Rate.belongsTo(models.Movie, {
+      foreignKey: 'movieId',
+      as: 'movie',
+      onDelete: 'CASCADE',
+    })
     // associations can be defined here
   };
   return Rate;
