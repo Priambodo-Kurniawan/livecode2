@@ -6,6 +6,6 @@ const rate = require('../controllers/rateController');
 router.post('/:movieId', rate.addRate);
 
 // delete rate by movieId
-router.delete('/:movieId', rate.deleteRate);
+// router.delete('/:movieId', rate.deleteRate);
 
 module.exports = router;

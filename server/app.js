@@ -3,6 +3,7 @@ const PORT = process.env.PORT || 3000;
 
 var indexRouter = require('./routes/index');
 var moviesRouter = require('./routes/movie');
+var rateRouter = require('./routes/rate');
 
 var app = express();
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/', indexRouter);
 app.use('/movies', moviesRouter);
+app.use('/rates', rateRouter);
 
 // error handler
 app.use(function(err, req, res, next) {
