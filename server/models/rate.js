@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
   Rate.associate = function(models) {
     Rate.belongsTo(models.Movie, {
       foreignKey: 'movieId',
-      as: 'movie',
+      as: 'Movie',
       onDelete: 'CASCADE',
     })
     // associations can be defined here

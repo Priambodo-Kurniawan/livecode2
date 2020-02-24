@@ -6,7 +6,7 @@ const movie = require('../controllers/movieController');
 router.get('/', movie.getAll);
 
 // get movie by id
-// router.get('/:id', movie.getmovieById);
+router.get('/:id', movie.getmovieById);
 
 // update movie
 // router.put('/:id', movie.updatemovieById);

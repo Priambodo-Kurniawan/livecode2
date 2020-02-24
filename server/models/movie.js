@@ -56,7 +56,7 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     Movie.hasMany(models.Rate, {
       foreignKey: 'movieId',
-      as: 'rates',
+      as: 'Rates',
       onDelete: 'CASCADE',
     });
   };
