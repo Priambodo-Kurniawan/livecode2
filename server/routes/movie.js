@@ -9,6 +9,6 @@ router.get('/', movie.getAll);
 router.get('/:id', movie.getmovieById);
 
 // update movie
-// router.put('/:id', movie.updatemovieById);
+router.put('/:id', movie.updatemovieById);
 
 module.exports = router;

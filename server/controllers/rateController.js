@@ -19,4 +19,18 @@ methods.addRate = (req, res) => {
     });
 }
 
+methods.deleteRate = (req, res) => {
+    Rate.destroy({
+        where: { id: req.params.id }
+    })
+    .then(rate => {
+        res.status(200).json({
+            "message": "Delete rate success"
+        });
+    })
+    .catch(err => {
+        res.status(500).json({message: err.message})
+    });
+}
+
 module.exports = methods;
