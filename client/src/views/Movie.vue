@@ -17,7 +17,7 @@
                         <review-card v-for="(rate, index) in detailMovie.Rates" :key="index" :data="rate" />
                     </ul>
                     <!-- This is a button toggling the modal -->
-                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-add-review">Open</button>
+                    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-add-review">Add Review</button>
                 </div>
             </div>
         </div>
