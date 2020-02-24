@@ -1,11 +1,13 @@
 var express = require('express');
 const PORT = process.env.PORT || 3000;
+const cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var moviesRouter = require('./routes/movie');
 var rateRouter = require('./routes/rate');
 
 var app = express();
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
