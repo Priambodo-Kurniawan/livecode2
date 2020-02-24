@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "me",
+    "password": "password",
+    "database": "movie_livecode",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "me",
+    "password": "password",
+    "database": "movie_livecode",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "movie_livecode",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
